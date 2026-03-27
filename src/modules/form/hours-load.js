@@ -7,6 +7,8 @@ const hours = document.getElementById("hours")
 
 export function hoursLoad({ date }) {
 
+    //Limpa a lista de horários.
+    hours.innerHTML = ""
     const opening = openingHours.map((hour) => {
         //Recupera somente a hora
         const [schedulesHour] = hour.split(":")
@@ -32,6 +34,7 @@ export function hoursLoad({ date }) {
 
         li.textContent = hour
         
+        //Separa os horarios
         if (hour === "9:00") {
             hourHeaderAdd("Manha")    
         }
