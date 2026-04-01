@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack server",
-    "server": "json-server --watch server.json -- port 3333"
+    "server": "json-server --watch server.json -- port 3001"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
