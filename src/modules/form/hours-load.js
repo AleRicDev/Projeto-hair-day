@@ -15,7 +15,7 @@ export function hoursLoad({ date, dailySchedules }) {
         dayjs(schedule.when).format("HH:mm")
     )
 
-    console.log(unavailableHours)
+    
 
     const opening = openingHours.map((hour) => {
         

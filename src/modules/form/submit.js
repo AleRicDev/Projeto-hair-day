@@ -34,11 +34,11 @@ form.onsubmit = async (event) => {
         return alert("Selecione a hora.")
      }
      const [hour] = hourSelected.innerText.split(":")
-     console.log(hour)
+     
      
      //Insere a data na hora
      const when = dayjs(selectedDate.value).add(hour,"hour")
-     console.log(when)
+    
      
      //Gera um ID
      const id = new Date().getTime()
