@@ -39,7 +39,7 @@ export function schedulesShow({ dailySchedules }){
         item.append(time, name, cancelIcon)
 
        //Renderiza o agendamento na sessão (manhã, tarde ou noite)
-       if (hour >= 6 && hour < 12) {
+       if (hour >= 6 && hour < 13) {
            periodMorning.appendChild(item)
        } else if (hour >= 12 && hour < 18) {
            periodAfternoon.appendChild(item)

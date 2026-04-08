@@ -1,4 +1,4 @@
-import {sheduleFechByDay} from "../../services/schedule-fetch-by-day.js"
+import {scheduleFetchByDay} from "../../services/schedule-fetch-by-day.js"
 import { schedulesShow } from "../schedules/show.js"
 import { hoursLoad } from "../form/hours-load.js"
 
@@ -13,7 +13,7 @@ export async function schedulesDay(){
 
     //Buscar na API os agendamentos
 
-    const dailySchedules = await sheduleFechByDay({ date })
+    const dailySchedules = await scheduleFetchByDay({ date })
     
 
     // Exibe os agendamentos do dia
